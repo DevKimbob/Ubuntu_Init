@@ -7,11 +7,37 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
+# mkdir : todo
+mkdir todo
+
 # Basic Ubuntu Setup
-bash ./Basic_Ubuntu_Setup/start.sh
+cd Basic_Ubuntu_Setup
+bash start.sh
+cd ..
 
 # Install Packages
-bash ./Install_Packages/start.sh
+cd Install_Packages
+bash start.sh
+cd ..
+
+# Install Zsh
+cd Install_Zsh
+bash start.sh
+cd ..
+
+# Install NVim
+cd Install_NVim
+bash start.sh
+cd ..
+
+# WhiteSur
+cd WhiteSur
+bash start.sh
+cd ..
+
+# finallize
+cd todo
+cat *
 
 # Need to use GUI
 # 1. set ethernet

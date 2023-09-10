@@ -22,4 +22,5 @@ apt install vim \
             gnome-shell-extensions \
             bleachbit \
             direnv \
-            barrier
+            barrier \
+            -y
