@@ -8,10 +8,10 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Basic Ubuntu Setup
-./Basic_Ubuntu_Setup/start.sh
+bash ./Basic_Ubuntu_Setup/start.sh
 
 # Install Packages
-./Install_Packages/start.sh
+bash ./Install_Packages/start.sh
 
 # Need to use GUI
 # 1. set ethernet
