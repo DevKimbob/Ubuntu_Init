@@ -18,10 +18,10 @@ inputrc_file="/etc/inputrc"
 if grep -qF "$line_to_prepend" "$inputrc_file"; then
   echo "The line is already present in $inputrc_file"
   exit 0
+else
+  echo -e "$line_to_prepend\n\n$(cat "$inputrc_file")" > "$inputrc_file"
+  echo -e "Prepended '$line_to_prepend' to $inputrc_file"
 fi
-
-echo -e "$line_to_prepend\n\n$(cat "$inputrc_file")" > "$inputrc_file"
-echo -e "Prepended '$line_to_prepend' to $inputrc_file"
 
 # free Ctrl + Alt + arrow keybind
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "[]"
