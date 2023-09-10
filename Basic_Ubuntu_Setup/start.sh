@@ -35,3 +35,5 @@ new_mirror="mirror.kakao.com"
 
 sed -i "s/$old_mirror/$new_mirror/g" /etc/apt/sources.list
 echo "Replaced '$old_mirror' with '$new_mirror' in /etc/apt/sources.list"
+sed -i "s/$sec_mirror/$new_mirror/g" /etc/apt/sources.list
+echo "Replaced '$sec_mirror' with '$new_mirror' in /etc/apt/sources.list"
