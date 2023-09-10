@@ -30,7 +30,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
 
 # set apt mirror
-old_mirror="??.archive.ubuntu.com"
+old_mirror="..\.archive\.ubuntu\.com"
 sec_mirror="security.ubuntu.com"
 new_mirror="mirror.kakao.com"
 
