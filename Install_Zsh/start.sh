@@ -18,11 +18,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # nvm
 git clone https://github.com/nvm-sh/nvm.git
-bash nvm/install.sh > todo/nvm_export.txt
+bash nvm/install.sh > ..todo/nvm_export.txt
 nvm install --lts
 npm install -g typewritten
 
 # .zshrc
 mv ~/.zshrc ~/.zshrc.bak
 cp ./.zshrc ~/.zshrc
-echo "source ~/.zshrc" > todo/source_zsh.txt
+echo "source ~/.zshrc" > ..todo/source_zsh.txt
