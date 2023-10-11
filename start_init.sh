@@ -40,8 +40,30 @@ cd todo
 cat *
 
 # chrome
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/chrome.list
+sudo apt-get update
+sudo apt-get install google-chrome-stable
 # vscode
 # jetbrain tools
+# remove snap
+snap list
+snap remove --purge snap-store
+snap remove --purge gtk-common-themes
+snap remove --purge gnome-3-38-2004
+snap remove --purge core20 
+snap remove --purge bare 
+umount /snap/core20/1405
+apt autoremove --purge snapd
+rm -rf ~/snap/
+rm -rf /snap
+rm -rf /var/snap
+rm -rf /var/lib/snapd
+apt-mark hold snapd 
+# fonts-powerline
+https://github.com/powerline/fonts/tree/master
+# xrdp
+# conda
 
 # Need to use GUI
 # 1. set ethernet

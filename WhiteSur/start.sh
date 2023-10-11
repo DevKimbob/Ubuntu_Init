@@ -18,8 +18,8 @@ cd WhiteSur-gtk-theme
 ./install.sh -c Dark -c Light \
               -t purple \
               -N mojave \
-              -i ubuntu \
-              --darker
+              -i ubuntu
+              # --darker
 
 ./tweaks.sh -g
 cd ..
